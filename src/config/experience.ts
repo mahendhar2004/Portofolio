@@ -16,7 +16,7 @@ export const experience: Experience[] = [
     role: "Associate Software Engineering Intern",
     period: "2026",
     summary:
-      "Full-stack on a multi-tenant academic ERP — NestJS microservices behind an API gateway, consumed by React micro-frontends via Module Federation.",
+      "My first taste of real production scale — a multi-tenant ERP serving many colleges. I shipped features end-to-end across NestJS microservices and React micro-frontends, and learned to sweat the things that bite at scale: concurrency, idempotency, indexing.",
     stats: { commits: 375, repos: 17, loc: 165500 },
     commits: [
       { hash: "a1f9c2e", message: "feat: end-to-end Event Management system (multi-tenant)", tag: "shipped" },
@@ -32,7 +32,7 @@ export const experience: Experience[] = [
     role: "Remote Developer Intern",
     period: "2025",
     summary:
-      "Built the web presence and core product features for a 16-module hospital-management SaaS for ophthalmology & multi-specialty hospitals.",
+      "Where I learned to build for real users on real deadlines — the web presence and core features of a 16-module hospital-management SaaS, from a pixel-faithful marketing rebuild to serverless data flows on AWS.",
     commits: [
       { hash: "f02b7c8", message: "perf: -25% First Contentful Paint (code splitting + lazy load)", tag: "shipped" },
       { hash: "9a4e1d2", message: "feat: event-driven serverless backend on AWS Lambda" },

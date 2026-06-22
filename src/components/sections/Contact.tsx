@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { site } from "@/config/site";
 import { RevealText } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 const KINETIC = "Mahendhar";
 
@@ -39,7 +40,14 @@ export function Contact() {
     <footer id="contact" className="relative z-10 mt-24 border-t border-line pt-20">
       <div className="mx-auto max-w-6xl px-6 text-center md:px-10">
         <p className="label mb-4">(Contact)</p>
+        <div className="flex justify-center">
+          <GuideNote>made it this far? then we should probably talk.</GuideNote>
+        </div>
         <RevealText as="h2" text="Let's build something great!" className="display text-4xl md:text-6xl" />
+        <p className="mx-auto mt-5 max-w-lg text-base leading-relaxed text-muted">
+          I&apos;m looking for a team where I can keep shipping and learn from people better than me.
+          The fastest way to reach me is email — I actually reply.
+        </p>
         <a
           href={`mailto:${site.email}`}
           className="link-underline mt-7 inline-block font-serif text-2xl transition-colors hover:text-accent md:text-3xl"

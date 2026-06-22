@@ -7,9 +7,9 @@ export const site = {
   shortName: "Mahendhar",
   role: "Full-Stack + AI Engineer",
   tagline:
-    "I build production software end-to-end — web, mobile, backend, and even patented hardware. Final-year CSE @ IIITDM Jabalpur.",
+    "Final-year CS student who'd rather ship than talk about shipping — two live apps, 600+ real users, a patent, and a habit of finishing what I start.",
   about:
-    "I'm a full-stack engineer who ships real products people actually use — two live apps with 600+ combined users, a marketplace on the Play Store, a monetized blog platform, and a patented IoT device. I like owning problems from database to UI, and I'm going deep on AI/LLM engineering.",
+    "I'm happiest with a real problem in front of me and real users on the other side of it. I've taken three things from 'annoying gap' to 'live product people rely on' — a campus marketplace, a semester tracker, and a safety device that earned a patent. I own the whole path: schema, backend, UI, and the unglamorous-but-critical parts like payments and concurrency. Lately I've been going deep on AI engineering.",
 
   email: "mahendhar2004@gmail.com",
   phone: "+91 91005 67616",

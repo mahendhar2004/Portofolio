@@ -1,5 +1,6 @@
 import { site } from "@/config/site";
 import { RevealText, Reveal } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 const posts = [
   {
@@ -22,6 +23,7 @@ export function Blog() {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="label mb-4">(Writing · tild~)</p>
+          <GuideNote>i build it, then i write about how. here are three.</GuideNote>
           <RevealText as="h2" text="I write about what I build" className="display text-4xl md:text-6xl" />
           <p className="mt-3 text-sm text-muted">Ship real software, one post at a time.</p>
         </div>

@@ -1,11 +1,13 @@
 import { site } from "@/config/site";
 import { RevealText, Reveal } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 export function Education() {
   const e = site.education;
   return (
     <section id="education" className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
       <p className="label mb-4">(Education)</p>
+      <GuideNote>the foundation — and yes, i&apos;m out and job-ready in 2026.</GuideNote>
       <RevealText as="h2" text="Foundations" className="display mb-12 text-4xl md:text-6xl" />
 
       <div className="grid gap-4 md:grid-cols-2">

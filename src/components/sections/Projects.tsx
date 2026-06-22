@@ -7,6 +7,7 @@ import { ProjectDemo } from "@/components/demos/ProjectDemos";
 import { DeviceFrame } from "@/components/ui/DeviceFrame";
 import { ProofChips } from "@/components/ui/ProofChips";
 import { RevealText } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 function ProjectRow({ project, index }: { project: Project; index: number }) {
   const { setAccent, resetAccent } = useAccent();
@@ -71,14 +72,15 @@ export function Projects() {
   return (
     <section id="work" className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-36">
       <p className="label mb-4">(Selected Work)</p>
+      <GuideNote>psst — these aren&apos;t screenshots. they&apos;re the real apps, running. hover any of them.</GuideNote>
       <RevealText
         as="h2"
-        text="Four products — running live."
+        text="Four things I've actually shipped"
         className="display mb-3 text-4xl md:text-6xl"
       />
       <p className="mb-14 max-w-xl text-sm text-muted md:text-base">
-        Not screenshots. Each one is a tiny working version of something I built and shipped — hover
-        any project to retint the page to its world.
+        Each tile is a tiny working version of the real product — payments, chat, alerts and all.
+        Hover any project and the page takes on its colors.
       </p>
 
       <div className="flex flex-col gap-6">

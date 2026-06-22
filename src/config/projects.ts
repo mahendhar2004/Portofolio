@@ -23,13 +23,12 @@ export const projects: Project[] = [
     category: "Campus Marketplace",
     badge: "Live on Play Store · 400+ users · 4.9★",
     blurb:
-      "A peer-to-peer campus marketplace to buy, sell, exchange, and request services — a React Native app with Razorpay payments, real-time chat, and an operator analytics dashboard.",
+      "Grid began as the chaos of a hostel buy/sell WhatsApp group. I turned it into a real marketplace — 400+ students trade on it today, every payment reconciles to the rupee, and it's live on the Play Store at 4.9★.",
     highlights: [
-      "Launched on Google Play Store — 400+ active users, 4.9★ rating",
-      "Razorpay payments with HMAC webhook verification",
-      "Double-entry PostgreSQL ledger for payment integrity",
-      "Real-time chat (Supabase Realtime) + push notifications",
-      "Admin panel for moderation & a separate SEO landing page",
+      "Live on the Play Store — 400+ students, 4.9★",
+      "Every payment reconciled to the rupee — double-entry ledger + HMAC webhooks",
+      "Buyers and sellers chat in real time (Supabase Realtime) + push alerts",
+      "A moderation dashboard and an SEO landing page to pull in installs",
     ],
     tech: ["React Native", "Supabase", "PostgreSQL", "Razorpay", "Tailwind"],
     proof: [
@@ -46,12 +45,12 @@ export const projects: Project[] = [
     category: "Student Web App",
     badge: "~200 active users",
     blurb:
-      "An 8-page semester companion used by ~200 real students — live Firestore sync, a weighted CPI/SPI GPA engine with a What-If simulator, finances, and a gamified coin system.",
+      "~200 classmates trust this with their attendance, grades and money every day. It predicts your CPI, lets you simulate 'what if I get an A,' and quietly rewards you just for showing up.",
     highlights: [
-      "Adopted by ~200 real college students",
-      "Weighted CPI/SPI GPA engine + What-If grade simulator",
-      "Coin gamification via race-safe Firestore transactions",
-      "Real-time multi-device sync (onSnapshot), Recharts dashboards",
+      "Used daily by ~200 real students",
+      "Weighted CPI/SPI engine with a live What-If grade simulator",
+      "Coins & streaks that survive race conditions (Firestore transactions)",
+      "Everything syncs across your devices in real time",
     ],
     tech: ["React 19", "Firebase", "Zustand", "Recharts", "Framer Motion"],
     proof: [
@@ -67,12 +66,12 @@ export const projects: Project[] = [
     category: "Patented IoT Device",
     badge: "Patent No. 202521062326 · ‘O’ grade",
     blurb:
-      "A patented wearable safety band that fires multi-channel distress alerts — a GSM voice call + SMS with a live Google Maps link, and a Telegram cancellation window, on a 5-state response machine.",
+      "A band that calls for help when you can't. A year of work with my team — it earned an 'O' grade and, to our surprise, a published patent. It fires SMS with a live location, a Telegram alert, and an auto emergency call.",
     highlights: [
       "Published — Indian Patent No. 202521062326",
-      "ESP32 + SIM800L firmware, TinyGPS++ (NMEA) parsing",
-      "5-state response machine with a 10s Telegram cancel window",
-      "Dual-redundancy trigger: force sensor + debounced SOS button",
+      "ESP32 + SIM800L firmware on a 5-state response machine",
+      "A 10-second Telegram window to cancel a false alarm",
+      "Two independent triggers — a force sensor and an SOS button",
     ],
     tech: ["ESP32", "Embedded C++", "SIM800L", "TinyGPS++", "Telegram API"],
     proof: [
@@ -86,12 +85,12 @@ export const projects: Project[] = [
     title: "tild~",
     category: "Blog Platform",
     blurb:
-      "Tild — my own full-stack blog platform on Next.js 16 (RSC + ISR): Razorpay subscriptions, Postgres full-text search, Resend newsletters, and an AI-assisted writing pipeline that drafts and self-critiques posts. “Ship real software, one post at a time.”",
+      "I wanted a good place to write about building software, so I built the place too. Tild is a full Next.js platform — subscriptions, full-text search, newsletters, and an AI pipeline that drafts a post then critiques its own work. “Ship real software, one post at a time.”",
     highlights: [
-      "Next.js 16 App Router — RSC + ISR, 100% Lighthouse SEO",
-      "Razorpay subscription state machine (7 webhook types, idempotent)",
+      "My own platform — Next.js 16 (RSC + ISR), 100% Lighthouse SEO",
+      "Razorpay subscriptions on an idempotent 7-event webhook machine",
       "Postgres full-text search (tsvector) with Row-Level Security",
-      "AI writing pipeline with a 10-point self-critique rubric",
+      "An AI writing pipeline that self-scores on a 10-point rubric",
     ],
     tech: ["Next.js 16", "Supabase", "PostgreSQL", "Razorpay", "Resend"],
     proof: [

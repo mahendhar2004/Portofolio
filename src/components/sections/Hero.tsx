@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { site } from "@/config/site";
 import { RevealText } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -25,8 +26,8 @@ export function Hero() {
         </motion.p>
 
         <h1 className="display text-[15vw] leading-[0.92] md:text-7xl lg:text-8xl">
-          <RevealText text="I build it" className="block" delay={0.1} />
-          <RevealText text="and ship it." className="block text-muted" delay={0.24} />
+          <RevealText text="I build things" className="block" delay={0.1} />
+          <RevealText text="people actually use." className="block text-muted" delay={0.24} />
         </h1>
 
         <motion.p
@@ -46,6 +47,10 @@ export function Hero() {
         >
           {site.tagline}
         </motion.p>
+
+        <div className="mt-7">
+          <GuideNote>give me 60 seconds — i&apos;d rather show you than tell you.</GuideNote>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 14 }}

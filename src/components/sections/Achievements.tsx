@@ -2,22 +2,23 @@ import { site } from "@/config/site";
 import { TOTAL_CONTRIBUTIONS } from "@/config/experience";
 import { ContributionHeatmap } from "@/components/ui/ContributionHeatmap";
 import { RevealText, Reveal } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 const highlights = [
   {
-    tag: "Published app · gold",
-    title: "Grid — live on the Play Store",
-    detail: "400+ real users · 4.9★ rating. A shipped product beats most portfolio projects.",
+    tag: "Real users · gold",
+    title: "An app real people actually use",
+    detail: "Grid is live on the Play Store at 4.9★ with 400+ students — a shipped product beats a folder of demos.",
   },
   {
     tag: "Patent",
-    title: "Indian Patent No. 202521062326",
-    detail: "Sakhiya — a patented IoT women’s-safety wearable.",
+    title: "A published patent at 21",
+    detail: "Sakhiya, our IoT safety wearable — Indian Patent No. 202521062326.",
   },
   {
     tag: "Academic honour",
-    title: "‘O’ grade — design & implementation",
-    detail: "Top grade for the year-long engineering design project.",
+    title: "An ‘O’ grade for building it",
+    detail: "Top grade for the year-long design project — for the engineering, not just the report.",
   },
 ];
 
@@ -25,6 +26,7 @@ export function Achievements() {
   return (
     <section id="achievements" className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
       <p className="label mb-4">(Achievements / Open source)</p>
+      <GuideNote>this is the part i&apos;m proudest of.</GuideNote>
       <RevealText as="h2" text="Proof of work" className="display mb-12 text-4xl md:text-6xl" />
 
       {/* the "gold" highlight cards */}

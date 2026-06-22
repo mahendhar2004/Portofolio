@@ -1,5 +1,6 @@
 import { skills } from "@/config/skills";
 import { RevealText, Reveal } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 const all = skills.flatMap((g) => g.items);
 
@@ -23,6 +24,7 @@ export function Skills() {
   return (
     <section id="skills" className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
       <p className="label mb-4">(Toolkit)</p>
+      <GuideNote>only the tools i&apos;d actually defend in an interview — no padding.</GuideNote>
       <RevealText as="h2" text="What I build with" className="display mb-12 text-4xl md:text-6xl" />
 
       {/* category tiles with interactive chips */}

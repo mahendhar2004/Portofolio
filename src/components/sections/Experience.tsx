@@ -3,12 +3,14 @@
 import { motion } from "framer-motion";
 import { experience } from "@/config/experience";
 import { RevealText, Reveal } from "@/components/ui/Kinetic";
+import { GuideNote } from "@/components/ui/GuideNote";
 
 export function Experience() {
   return (
     <section id="experience" className="relative mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
       <p className="label mb-4">(Experience)</p>
-      <RevealText as="h2" text="What I shipped at work" className="display mb-12 text-4xl md:text-6xl" />
+      <GuideNote>production code, not to-do apps. here&apos;s what i actually shipped.</GuideNote>
+      <RevealText as="h2" text="Where I learned to ship for real" className="display mb-12 text-4xl md:text-6xl" />
 
       <div className="grid gap-6 md:grid-cols-2">
         {experience.map((job, j) => (
