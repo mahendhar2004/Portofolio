@@ -15,12 +15,9 @@ export function Navbar() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    let last = window.scrollY;
-    const onScroll = () => {
-      const y = window.scrollY;
-      setHidden(y > last && y > 240);
-      last = y;
-    };
+    // hidden once you scroll away from the top; only visible near the hero
+    const onScroll = () => setHidden(window.scrollY > 80);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -33,8 +30,8 @@ export function Navbar() {
       className="fixed inset-x-0 top-0 z-50"
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-10">
-        <a href="#top" className="mono text-sm tracking-[0.2em]">
-          S—M—G
+        <a href="#top" className="font-serif text-lg">
+          Mahendhar Goud
         </a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (

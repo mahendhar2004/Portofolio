@@ -15,16 +15,6 @@ export function Hero() {
       className="relative mx-auto grid min-h-[92svh] max-w-6xl items-center gap-12 px-6 pt-28 pb-16 md:grid-cols-[1.4fr_1fr] md:px-10"
     >
       <div>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="label mb-5 inline-flex items-center gap-2.5"
-        >
-          <span className="h-2 w-2 rounded-full bg-accent" style={{ boxShadow: "0 0 0 4px var(--accent-soft)" }} />
-          {site.name}
-        </motion.p>
-
         <h1 className="display text-[15vw] leading-[0.92] md:text-7xl lg:text-8xl">
           <RevealText text="I build things" className="block" delay={0.1} />
           <RevealText text="people actually use." className="block text-muted" delay={0.24} />
@@ -108,6 +98,17 @@ export function Hero() {
             style={{ objectPosition: "50% 22%", WebkitUserDrag: "none" } as React.CSSProperties}
           />
         </div>
+
+        {/* name label, frosted over the photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1, duration: 0.8, ease }}
+          className="absolute inset-x-3 bottom-5 z-10 mx-auto w-fit rounded-2xl border border-white/10 bg-ground/40 px-5 py-2.5 text-center shadow-lg shadow-black/30 backdrop-blur-md"
+        >
+          <p className="font-serif text-base leading-tight md:text-lg">{site.name}</p>
+          <p className="mono mt-1 text-[10px] tracking-[0.18em] text-accent">{site.role}</p>
+        </motion.div>
       </motion.div>
     </section>
   );
