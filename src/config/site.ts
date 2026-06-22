@@ -15,8 +15,8 @@ export const site = {
   phone: "+91 91005 67616",
   location: "Hyderabad, India · Open to relocation",
 
-  // Used for SEO/OpenGraph absolute URLs. Update to your real domain.
-  url: "https://mahendhar.vercel.app",
+  // Used for SEO/OpenGraph absolute URLs.
+  url: "https://mahendhar-port.vercel.app",
 
   links: {
     github: "https://github.com/mahendhar2004",
